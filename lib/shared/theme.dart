@@ -8,8 +8,7 @@ Color kBlueColor = const Color(0xff0d0f35);
 Color kBlueSkyColor = const Color(0xff406280);
 Color kPurpleColor = const Color(0xff5b628f);
 
-double radiusBtn = 30.0;
-double radiusTextFormField = 30.0;
+double defaultRadius = 30.0;
 double defaultMP = 20.0;
 
 String? text;

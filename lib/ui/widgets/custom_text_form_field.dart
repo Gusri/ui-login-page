@@ -29,10 +29,10 @@ class CustomTextFormField extends StatelessWidget {
               fillColor: kWhiteColor,
               hintText: hinText,
               border: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(radiusTextFormField),
+                borderRadius: BorderRadius.circular(defaultRadius),
               ),
               focusedBorder: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(radiusTextFormField),
+                borderRadius: BorderRadius.circular(defaultRadius),
                 borderSide: BorderSide(color: kBlueColor),
               ),
             ),

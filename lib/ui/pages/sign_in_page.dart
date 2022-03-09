@@ -11,12 +11,12 @@ class SignInPage extends StatelessWidget {
   Widget build(BuildContext context) {
     Widget title() {
       return Container(
-        margin: const EdgeInsets.only(top: 40.0),
+        margin: const EdgeInsets.only(top: 30.0),
         child: Column(
           children: [
             customTxt('Login', kBlueColor, 28.0, semiBold, 4.0),
             const SizedBox(height: 5.0),
-            customTxt('Login in your Account', kBlueSkyColor, 18.0, medium, 1)
+            customTxt('Login in your Account', kGreyColor, 18.0, medium, 1)
           ],
         ),
       );
@@ -60,7 +60,10 @@ class SignInPage extends StatelessWidget {
         return CustomButton(
             margin: const EdgeInsets.only(top: 30.0),
             text: 'SIGN IN',
-            onPressed: () {});
+            onPressed: () {
+              Navigator.pushNamedAndRemoveUntil(
+                  context, '/main', (route) => false);
+            });
       }
 
       return Container(
@@ -105,7 +108,6 @@ class SignInPage extends StatelessWidget {
           child: Container(
             margin: EdgeInsets.symmetric(horizontal: defaultMP),
             padding: EdgeInsets.symmetric(horizontal: defaultMP),
-            width: double.infinity,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
